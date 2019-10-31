@@ -1,18 +1,22 @@
 {
-  "name": "jfaquinojr.github.io",
-  "version": "1.0.0",
-  "description": "JFA profile",
-  "author": "Jojo Aquino",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
-  },
-  "devDependencies": {}
+    "name": "jfaquinojr.github.io",
+    "version": "1.0.0",
+    "description": "JFA profile",
+    "author": "Jojo Aquino",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+        "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
+    },
+    "dependencies": {
+        "nuxt": "^2.0.0",
+        "@nuxtjs/axios": "^5.3.6"
+    },
+    "devDependencies": {
+        "cross-env": "^6.0.3"
+    }
 }
