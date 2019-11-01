@@ -27,12 +27,12 @@
           Ako po ay isang <br />
           <transition name="slide-fade">
             <span class="highlight nes-text is-primary" v-if="ano === 1"
-              >Batang&nbsp;90s</span
+              >Batang 90s</span
             >
           </transition>
           <transition name="slide-fade">
             <span class="highlight nes-text is-success" v-if="ano === 2"
-              >Software&nbsp;Developer</span
+              >Software Developer</span
             >
           </transition>
           <transition name="slide-fade">
@@ -42,7 +42,7 @@
           </transition>
           <transition name="slide-fade">
             <span class="highlight nes-text is-success" v-if="ano === 4"
-              >Fullstack&nbsp;Developer</span
+              >Fullstack Developer</span
             >
           </transition>
           <transition name="slide-fade">
@@ -52,7 +52,7 @@
           </transition>
           <transition name="slide-fade">
             <span class="highlight nes-text is-success" v-if="ano === 6"
-              >Backend&nbsp;Developer</span
+              >Backend Developer</span
             >
           </transition>
         </h2>
@@ -85,41 +85,6 @@ export default {
         this.ano = 1;
       }
     }, 2100);
-
-    // const peeps = [];
-
-    // let peep = document.createElement("i");
-    // peep.classList.add("nes-mario");
-    // peep.style.left = 0;
-    // peep.style.top = 0;
-    // peep.style.position = "absolute";
-    // // peep.style.left = `${Math.floor(Math.random() * 100)}vw`; // starting point on x-axis
-    // // peep.style.top = `${Math.floor(Math.random() * 100)}vh`; // starting point on y-axis
-    // //peep.style.transform = `scale(${Math.random()})`;
-    // //peep.style.width = `${Math.random()}em`; // width of peep
-
-    // let to = {
-    //   x: Math.random() * 11, // distance to move along x-axis
-    //   y: Math.random() * 12 // distance to move along y-axis
-    // };
-
-    // peep.animate(
-    //   [
-    //     { transform: "translate(0, 0)" }, // starting position is from css values
-    //     { transform: `translate(calc(100vw - 90px), calc(100vh - 90px))` } // use randomly calculated values to set distance of movement
-    //   ],
-    //   {
-    //     duration: (Math.random() + 1) * 2000, // random duration
-    //     direction: "alternate", // go back and forth
-    //     fill: "both",
-    //     iterations: Infinity, // animation occurs forever
-    //     easing: "ease-in-out" // slow movement
-    //   }
-    // );
-
-    // this.$el.append(peep);
-
-    //alert(this.$el);
   }
 };
 </script>
@@ -224,7 +189,7 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  body {
+  .container {
     background-color: rgba(255, 0, 0, 0.109);
   }
 
@@ -233,12 +198,16 @@ a:hover {
   }
 
   .highlight {
-      margin-top: 15px;
+    margin-top: 15px;
+  }
+
+  h2#ako-po {
+    height: 150px;
   }
 }
 
 @media screen and (min-width: 801px) {
-  body {
+  .container {
     background-color: rgba(0, 128, 0, 0.123);
   }
 
@@ -248,7 +217,7 @@ a:hover {
 
   h2#ako-po {
     font-size: 2.7rem;
-    height: 150px;
+    height: 200px;
   }
 
   .ako-po-container {
