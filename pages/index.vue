@@ -8,7 +8,7 @@
         </div>
       </a>
       <div class="filler"></div>
-      <ul>
+      <ul class="nav-menu">
         <li class="nav-menu-item">
           <a href="#"><i class="nes-icon coin"></i>&nbsp;Blog</a>
         </li>
@@ -24,7 +24,7 @@
       <h1 id="kamusta">Kamusta!</h1>
       <div class="ako-po-container">
         <h2 id="ako-po">
-          Ako po ay isang <br/>
+          Ako po ay isang <br />
           <transition name="slide-fade">
             <span class="highlight nes-text is-primary" v-if="ano === 1"
               >Batang&nbsp;90s</span
@@ -207,7 +207,6 @@ a:hover {
 
 .highlight {
   background-color: rgb(214, 214, 214);
-  padding: 15px;
   word-break: keep-all;
   word-wrap: normal;
 }
@@ -216,23 +215,31 @@ a:hover {
   margin-right: 5px !important;
 }
 
+.main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto 0;
+  width: calc(100vw-5px);
+}
+
 @media screen and (max-width: 800px) {
   body {
     background-color: rgba(255, 0, 0, 0.109);
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .highlight {
+      margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 801px) {
   body {
     background-color: rgba(0, 128, 0, 0.123);
-  }
-
-  .main {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto 0;
-    width: calc(100vw-5px);
   }
 
   h1#kamusta {
@@ -245,10 +252,13 @@ a:hover {
   }
 
   .ako-po-container {
-      width: 70%;
-      margin: 0 auto;
-      margin-top:50px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .highlight {
+    padding: 15px;
   }
 }
-
 </style>
